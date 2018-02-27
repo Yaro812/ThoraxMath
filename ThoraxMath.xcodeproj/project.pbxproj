@@ -10,6 +10,8 @@
 		6D506CF82045B1390011CB4B /* ThoraxMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D506CEE2045B1390011CB4B /* ThoraxMath.framework */; };
 		6D506CFD2045B1390011CB4B /* ThoraxMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506CFC2045B1390011CB4B /* ThoraxMathTests.swift */; };
 		6D506CFF2045B1390011CB4B /* ThoraxMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D506CF12045B1390011CB4B /* ThoraxMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D506D092045B1C30011CB4B /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506D082045B1C30011CB4B /* Geometry.swift */; };
+		6D506D0B2045B1CE0011CB4B /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506D0A2045B1CE0011CB4B /* Math.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		6D506CF72045B1390011CB4B /* ThoraxMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThoraxMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D506CFC2045B1390011CB4B /* ThoraxMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoraxMathTests.swift; sourceTree = "<group>"; };
 		6D506CFE2045B1390011CB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D506D082045B1C30011CB4B /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		6D506D0A2045B1CE0011CB4B /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				6D506CF12045B1390011CB4B /* ThoraxMath.h */,
+				6D506D082045B1C30011CB4B /* Geometry.swift */,
+				6D506D0A2045B1CE0011CB4B /* Math.swift */,
 				6D506CF22045B1390011CB4B /* Info.plist */,
 			);
 			path = ThoraxMath;
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					6D506CED2045B1390011CB4B = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					6D506CF62045B1390011CB4B = {
@@ -196,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D506D092045B1C30011CB4B /* Geometry.swift in Sources */,
+				6D506D0B2045B1CE0011CB4B /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +343,7 @@
 		6D506D032045B1390011CB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.spb.thorax.ThoraxMath;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +366,7 @@
 		6D506D042045B1390011CB4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +388,7 @@
 		6D506D062045B1390011CB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2794N3T97K;
 				INFOPLIST_FILE = ThoraxMathTests/Info.plist;
@@ -390,6 +403,7 @@
 		6D506D072045B1390011CB4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2794N3T97K;
 				INFOPLIST_FILE = ThoraxMathTests/Info.plist;
