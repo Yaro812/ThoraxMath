@@ -19,7 +19,12 @@ public func compass(radians: CGFloat) -> CGFloat { return radians - CGFloat.pi *
 public struct Circle {
     public let radius: CGFloat
     public let center: CGPoint
-    
+
+    public init(radius: CGFloat, center: CGPoint) {
+        self.radius = radius
+        self.center = center
+    }
+
     /// returns point on circumference by the given angle clockwise in radians
     public func circumferencePoint(radians: CGFloat) -> CGPoint {
         return CGPoint(x: center.x + radius * cos(radians), y: center.y + radius * sin(radians))
