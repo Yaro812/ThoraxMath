@@ -1,8 +1,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ThoraxMath'
-  s.swift_version    = '4.0'
-  s.version          = '1.0.3'
+  s.swift_version    = '4.2'
+  s.version          = '1.1.0'
   s.summary          = 'Missing math'
 
   s.description      = <<-DESC
